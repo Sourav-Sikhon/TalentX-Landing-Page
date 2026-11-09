@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TalentX — Great People. Better Hiring. All Connected.</title>
+<meta name="description" content="TalentX is an AI-powered applicant tracking system. Create jobs, screen CVs, rank candidates and move hiring decisions forward in one connected platform.">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("motion")</script>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- shared SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="mark" viewBox="0 0 30 30"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0ZM6.65279 6.39344V7.58957C6.65278 8.30131 6.45438 8.83517 6.05749 9.19105C5.67781 9.54694 5.12536 9.71047 4.40053 9.71047H4.18033V13.0297H6.65279V18.5968C6.65279 20.2237 7.11894 21.4948 8.05088 22.4099C8.99545 23.1927 9.94602 23.4995 10.6489 23.6049C10.6562 23.6048 11.065 23.6031 11.239 23.6049C11.617 23.6086 11.849 23.6049 11.8532 23.6049H15.1155L17.8118 19.6618L20.5518 23.6049H25.0301L20.0837 16.7033L25.082 9.71047H20.5777L17.8118 13.6622L15.0896 9.71047H12.9953V12.6392C12.9954 14.8721 14.8215 16.6868 17.0849 16.7033C14.7329 16.7198 12.8303 18.5968 12.8135 20.917C12.7968 18.5968 10.8944 16.7198 8.54244 16.7033C10.8058 16.6868 12.6317 14.8721 12.6318 12.6392V9.71047H10.5416V6.39344H6.65279Z"/></symbol>
+    <symbol id="arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="chev" viewBox="0 0 12 12"><path d="m2.5 4.5 3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="check" viewBox="0 0 12 12"><path d="m2.5 6.4 2.4 2.4 4.6-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- 01 NAV -->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="nav-logo" href="#top" aria-label="TalentX home"><img src="assets/logo.svg" alt="TalentX" width="111" height="30"></a>
+    <nav class="nav-links" aria-label="Primary">
+      <div class="dd">
+        <button class="dd-btn" aria-expanded="false" aria-controls="dd-product">Product <svg class="ic"><use href="#chev"/></svg></button>
+        <div class="dd-panel" id="dd-product">
+          <a href="#process"><b>AI Job Creation</b><span>Structured job descriptions, faster.</span></a>
+          <a href="#ai"><b>Candidate Screening</b><span>Review CVs and spot relevant qualifications.</span></a>
+          <a href="#showcase"><b>Candidate Management</b><span>Every candidate, one clear record.</span></a>
+          <a href="#showcase"><b>Recruitment Pipeline</b><span>Move candidates stage by stage.</span></a>
+        </div>
+      </div>
+      <div class="dd">
+        <button class="dd-btn" aria-expanded="false" aria-controls="dd-solutions">Solutions <svg class="ic"><use href="#chev"/></svg></button>
+        <div class="dd-panel" id="dd-solutions">
+          <a href="#roles"><b>Recruiters</b><span>Candidates, screening, communication.</span></a>
+          <a href="#roles"><b>HR Managers</b><span>Recruitment operations and performance.</span></a>
+          <a href="#roles"><b>Hiring Managers</b><span>Review candidates, decide together.</span></a>
+          <a href="#roles"><b>Organization Admins</b><span>Access, permissions, settings.</span></a>
+        </div>
+      </div>
+      <div class="dd">
+        <button class="dd-btn" aria-expanded="false" aria-controls="dd-features">Features <svg class="ic"><use href="#chev"/></svg></button>
+        <div class="dd-panel" id="dd-features">
+          <a href="#ai"><b>Candidate Ranking</b><span>Prioritize with intelligent matching.</span></a>
+          <a href="#showcase"><b>Recruitment Dashboard</b><span>Your hiring at a glance.</span></a>
+          <a href="#control"><b>Role-based Access</b><span>The right access for every role.</span></a>
+          <a href="#control"><b>Audit Logging</b><span>A clear record of workspace activity.</span></a>
+        </div>
+      </div>
+      <div class="dd">
+        <button class="dd-btn" aria-expanded="false" aria-controls="dd-resources">Resources <svg class="ic"><use href="#chev"/></svg></button>
+        <div class="dd-panel" id="dd-resources">
+          <a href="#"><b>Help Center</b><span>Guides for your hiring team.</span></a>
+          <a href="#"><b>Documentation</b><span>How TalentX works.</span></a>
+        </div>
+      </div>
+      <a class="nav-plain" href="#cta">Pricing</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="nav-login" href="#">Log in</a>
+      <a class="btn btn-sm" href="#cta"><span>Get Started</span><svg class="ic"><use href="#arrow"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- 02 HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 class="hero-title" aria-label="Great People. Better Hiring. All Connected.">
+        <span class="line" aria-hidden="true"><span class="w">Great</span> <span class="w">People.</span></span>
+        <span class="line" aria-hidden="true"><span class="w">Better</span> <span class="w">Hiring.</span></span>
+        <span class="line" aria-hidden="true"><span class="w">All</span> <span class="w"><em>Connected.</em></span></span>
+      </h1>
+      <p class="hero-sub" data-hero>Bring your entire recruitment journey together. Discover talent, evaluate candidates and make smarter hiring decisions with TalentX.</p>
+      <div class="hero-cta" data-hero>
+        <a class="btn" href="#cta"><span>Get Started</span><svg class="ic"><use href="#arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#process"><span>Explore TalentX</span><svg class="ic"><use href="#arrow"/></svg></a>
+      </div>
+      <p class="hero-note" data-hero>One intelligent platform for your entire hiring journey.</p>
+    </div>
+
+    <div class="hero-art" id="heroArt" aria-hidden="true">
+      <svg class="hero-svg" viewBox="0 0 620 640" fill="none">
+        <circle class="hc hc1" cx="318" cy="330" r="290" />
+        <circle class="hc hc2" cx="318" cy="330" r="214" />
+        <circle class="hc hc3" cx="318" cy="330" r="138" />
+        <defs><radialGradient id="sunGrad" cx="32%" cy="28%" r="80%"><stop offset="0" stop-color="#FFE3A3"/><stop offset=".6" stop-color="#F0B54A"/><stop offset="1" stop-color="#D9951F"/></radialGradient></defs><circle class="hs hs-solid" cx="548" cy="132" r="58" />
+        <circle class="hs hs-soft" cx="104" cy="548" r="104" />
+        <path class="hp" id="hp1" /><path class="hp" id="hp2" /><path class="hp" id="hp3" /><path class="hp" id="hp4" />
+      </svg>
+      
+      <div class="frag f-job" data-depth="14">
+        <span class="dot"></span><b>Product Designer</b><span class="f-mute">Remote · Open role</span>
+      </div>
+
+      <div class="frag f-cand" data-depth="22">
+        <div class="f-head">
+          <span class="av av-lg a1">AO</span>
+          <div><b>Amara Okafor</b><span class="f-mute">Senior Product Designer</span></div>
+        </div>
+        <div class="f-chips"><span>Design systems</span><span>User research</span><span>Figma</span></div>
+        <div class="f-match"><span>Match</span><b>94%</b><i><u style="width:94%"></u></i></div>
+      </div>
+
+      <div class="frag f-pipe" data-depth="30">
+        <div class="f-title"><b>Pipeline</b><span class="f-mute">Product Designer</span></div>
+        <div class="f-stages">
+          <div><i style="height:62px"></i><span>Applied</span><b>64</b></div>
+          <div><i style="height:40px"></i><span>Screen</span><b>28</b></div>
+          <div><i style="height:24px"></i><span>Interview</span><b>11</b></div>
+          <div class="on"><i style="height:12px"></i><span>Offer</span><b>2</b></div>
+        </div>
+      </div>
+
+      <div class="frag f-rank" data-depth="38">
+        <div class="f-title"><b>Top ranked</b></div>
+        <ol>
+          <li><span class="av a1">AO</span>Amara O.<b>94</b></li>
+          <li><span class="av a2">DR</span>Daniel R.<b>88</b></li>
+          <li><span class="av a3">LH</span>Lina H.<b>81</b></li>
+        </ol>
+      </div>
+      <svg class="hero-top" id="heroTop" fill="none"></svg>
+    </div>
+  </div>
+  <p class="sample-note hero-sample">Interface shown with sample data</p>
+</section>
+
+<!-- 03 STATEMENT -->
+<section class="statement" id="about">
+  <div class="wrap">
+    <h2 class="statement-text" id="statementText">Hiring is more than filling positions. It’s about finding the <em>right connections.</em></h2>
+    <div class="statement-grid">
+      <p class="statement-sub reveal">TalentX gives modern hiring teams the clarity, intelligence and tools to move from applications to meaningful hiring decisions.</p>
+      <div class="cx" id="cx" aria-hidden="true">
+        <div class="cx-tilt" id="cxTilt">
+          <svg class="cx-lines" id="cxLines" fill="none"><path id="cxA"/><path id="cxB"/><path id="cxC"/></svg>
+          <div class="cx-card cx-cand" id="cxCand">
+            <span class="cx-lab">Candidate</span>
+            <div class="cx-who"><span class="av av-lg a1">AO</span><div><b>Amara Okafor</b><span>Senior Product Designer</span></div></div>
+            <div class="cx-tags"><span>Design systems</span><span>User research</span><span>Figma</span></div>
+            <div class="cx-meta"><span>Experience</span><b>8 years</b></div>
+          </div>
+          <div class="cx-match" id="cxMatch"><i class="cx-halo"></i><i class="cx-halo h2"></i><div class="cx-sphere"><b>94<small>%</small></b><span>Match</span></div></div>
+          <div class="cx-card cx-why" id="cxWhy">
+            <span class="cx-lab">Why it matches</span>
+            <div class="cx-row"><span>Skills</span><i><u style="width:96%"></u></i><b>96</b></div>
+            <div class="cx-row"><span>Experience</span><i><u style="width:100%"></u></i><b>8 / 5 yrs</b></div>
+            <div class="cx-row"><span>Location</span><i><u style="width:100%"></u></i><b>Remote</b></div>
+          </div>
+          <div class="cx-card cx-job" id="cxJob">
+            <span class="cx-lab">Opportunity</span>
+            <div class="cx-who"><span class="cx-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></svg></span><div><b>Product Designer</b><span>Remote · Full-time</span></div></div>
+            <ul class="cx-req"><li><svg class="ic"><use href="#check"/></svg>5+ years experience</li><li><svg class="ic"><use href="#check"/></svg>Design systems</li><li><svg class="ic"><use href="#check"/></svg>Prototyping</li></ul>
+            <div class="cx-meta"><span>Stage</span><b class="cx-stage">Interview</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 PRODUCT STORY -->
+<section class="process" id="process">
+  <div class="proc-pin" id="procPin">
+    <div class="wrap proc-wrap">
+      <div class="proc-top">
+        <div class="proc-head">
+          <h2 class="h2">One platform. <em>Every part</em> of hiring.</h2>
+          <p class="lede">From creating a job to finding the right candidate, everything works together in one connected experience.</p>
+        </div>
+        <div class="pv" id="procPv" aria-live="polite">
+          <div class="pv-bar"><i></i><i></i><i></i><span class="pv-title" id="pvTitle">Create job</span></div>
+          <div class="pv-stage">
+            <!-- 1 create -->
+            <div class="pv-panel shot-panel" data-stage="0"><img class="shot" src="assets/screens/create-job.jpg" width="1900" height="2000" alt="TalentX create job form with a step flow for basic information, description, attribute scores and preview" loading="lazy" decoding="async"></div>
+            <!-- 2 discover -->
+            <div class="pv-panel shot-panel" data-stage="1"><img class="shot" src="assets/screens/cvbank.jpg" width="2000" height="1293" alt="TalentX CV Bank listing candidates with the job they applied for, source and status" loading="lazy" decoding="async"></div>
+            <!-- 3 evaluate -->
+            <div class="pv-panel shot-panel" data-stage="2"><img class="shot" src="assets/screens/job-details.jpg" width="2000" height="1293" alt="TalentX job details with description, requirements, specifications and ranking criteria" loading="lazy" decoding="async"></div>
+            <!-- 4 hire -->
+            <div class="pv-panel" data-stage="3">
+              <div class="board board-4" data-render="board4"></div>
+              <div class="thread">
+                <div><span class="av a2">DR</span><p><b>Daniel</b> Portfolio is excellent. I’d move Amara to the offer stage.</p></div>
+                <div><span class="av a3">LH</span><p><b>Lina</b> Agreed. Preparing the offer details.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rail" id="rail" role="tablist" aria-label="Hiring stages">
+        <div class="rail-line"><i id="railFill"></i></div>
+        <button class="step is-active" role="tab" aria-selected="true" data-i="0">
+          <svg class="mk" viewBox="0 0 32 32"><circle cx="16" cy="16" r="9"/></svg>
+          <span class="num" aria-hidden="true">01</span><b>Create</b><p>Create structured job descriptions and organize hiring requirements.</p>
+        </button>
+        <button class="step" role="tab" aria-selected="false" data-i="1" tabindex="-1">
+          <svg class="mk" viewBox="0 0 32 32"><circle cx="12" cy="16" r="9"/><circle cx="20" cy="16" r="9"/></svg>
+          <span class="num" aria-hidden="true">02</span><b>Discover</b><p>Collect applications and discover relevant candidates.</p>
+        </button>
+        <button class="step" role="tab" aria-selected="false" data-i="2" tabindex="-1">
+          <svg class="mk" viewBox="0 0 32 32"><circle cx="16" cy="16" r="9"/><path class="fill" d="M16 7a9 9 0 0 0 0 18z"/></svg>
+          <span class="num" aria-hidden="true">03</span><b>Evaluate</b><p>Screen CVs, compare qualifications and prioritize candidates.</p>
+        </button>
+        <button class="step" role="tab" aria-selected="false" data-i="3" tabindex="-1">
+          <svg class="mk" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><circle class="fill" cx="16" cy="16" r="6"/></svg>
+          <span class="num" aria-hidden="true">04</span><b>Hire</b><p>Collaborate with your team and move candidates toward successful hiring decisions.</p>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 AI -->
+<section class="ai" id="ai">
+  <div class="wrap ai-grid">
+    <div class="ai-copy">
+      <h2 class="h2">Less manual screening. <em>More meaningful</em> decisions.</h2>
+      <p class="lede">Let intelligent recruitment tools handle repetitive work while your team focuses on finding the right people.</p>
+      <ul class="caps">
+        <li><b>AI Job Creation</b><p>Create clear and structured job descriptions faster.</p></li>
+        <li><b>Intelligent CV Screening</b><p>Review candidate information and identify relevant qualifications.</p></li>
+        <li><b>Candidate Ranking</b><p>Prioritize candidates using intelligent matching and ranking.</p></li>
+      </ul>
+    </div>
+    <div class="ai-ui" id="aiUi">
+      <div class="aiw">
+        <div class="aiw-bar" data-ai="bar"><i></i><i></i><i></i><span>Dynamic AI search · Matched candidates</span></div>
+        <div class="aiw-crop"><img class="shot" data-ai="img" src="assets/screens/ai-match.jpg" width="2000" height="1457" alt="TalentX matched candidates: weighted ranking criteria on the left and candidates ranked by match score on the right" loading="lazy" decoding="async"></div>
+      </div>
+      <p class="sample-note">Product screen shown with sample data</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 SHOWCASE -->
+<section class="show" id="showcase">
+  <div class="wrap show-grid">
+    <div class="show-copy">
+      <h2 class="h2">Powerful underneath. <em>Effortless</em> to use.</h2>
+      <p class="lede">Everything your hiring team needs, organized into one clear and intuitive workspace.</p>
+      <div class="tabs" role="tablist" aria-label="Product experiences">
+        <button role="tab" id="tab-0" aria-selected="true" aria-controls="sp-0" class="tab is-active"><span>Recruitment Dashboard</span><svg class="ic"><use href="#arrow"/></svg></button>
+        <button role="tab" id="tab-1" aria-selected="false" aria-controls="sp-1" class="tab" tabindex="-1"><span>Candidate Management</span><svg class="ic"><use href="#arrow"/></svg></button>
+        <button role="tab" id="tab-2" aria-selected="false" aria-controls="sp-2" class="tab" tabindex="-1"><span>Hiring Pipeline</span><svg class="ic"><use href="#arrow"/></svg></button>
+      </div>
+      <p class="tab-desc" id="tabDesc">See every job and where it stands across the hiring lifecycle.</p>
+    </div>
+    <div class="app-wrap" id="appWrap">
+      <div class="app">
+        <div class="app-bar"><i></i><i></i><i></i><span id="appTitle">Jobs</span></div>
+        <div class="app-main">
+          <!-- dashboard -->
+          <div class="app-panel shot-panel is-active" id="sp-0" role="tabpanel" aria-labelledby="tab-0">
+            <img class="shot" src="assets/screens/jobs.jpg" width="1991" height="1287" alt="TalentX jobs overview with totals for active, approved, in review, draft and rejected jobs and a grid of job cards" loading="lazy" decoding="async">
+          </div>
+          <!-- candidates -->
+          <div class="app-panel shot-panel" id="sp-1" role="tabpanel" aria-labelledby="tab-1" hidden>
+            <img class="shot" src="assets/screens/passport.jpg" width="2000" height="1293" alt="TalentX talent passport showing a candidate profile with resume and cover letter files" loading="lazy" decoding="async">
+          </div>
+          <!-- pipeline -->
+          <div class="app-panel" id="sp-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+            <div class="app-h"><h3>Pipeline</h3><span class="f-mute">Product Designer</span></div>
+            <div class="board board-4 board-lg" data-render="board5"></div>
+          </div>
+        </div>
+      </div>
+      <p class="sample-note">Product screens shown with sample data. The pipeline view is an illustration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 07 ROLES -->
+<section class="roles" id="roles">
+  <div class="wrap">
+    <div class="roles-head">
+      <h2 class="h2">Every hiring role. <em>One shared</em> direction.</h2>
+      <p class="lede">Give every member of your recruitment team the right tools and visibility to move hiring forward.</p>
+    </div>
+    <div class="roles-grid">
+      <article class="role r1">
+        <svg class="sym" viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="16" cy="32" r="9"/><circle cx="48" cy="32" r="9"/><path d="M25 32h14"/></svg>
+        <h3>Recruiters</h3>
+        <p>Manage candidates, screening and communication.</p>
+        <ul class="mini-list">
+          <li><span class="av a1">AO</span>Amara Okafor<em class="chip g">Interview</em></li>
+          <li><span class="av a2">DR</span>Daniel Reyes<em class="chip">Screening</em></li>
+          <li><span class="av a3">LH</span>Lina Haddad<em class="chip">Applied</em></li>
+        </ul>
+      </article>
+      <article class="role r2">
+        <svg class="sym" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M10 52V34M24 52V22M38 52V30M52 52V12"/></svg>
+        <h3>HR Managers</h3>
+        <p>Oversee recruitment operations and hiring performance.</p>
+        <div class="mini-bars" aria-hidden="true"><i style="height:30%"></i><i style="height:48%"></i><i style="height:40%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:84%"></i></div>
+        <p class="mini-cap">Sample view: hires per month</p>
+      </article>
+      <article class="role r3">
+        <svg class="sym" viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="22"/><path d="m22 33 7 7 14-15"/></svg>
+        <h3>Hiring Managers</h3>
+        <p>Review candidates and collaborate on decisions.</p>
+        <div class="mini-review"><span class="av a1">AO</span><div><b>Amara Okafor</b><span class="f-mute">Awaiting your review</span></div><span class="rv-btn">Review</span></div>
+      </article>
+      <article class="role r4">
+        <svg class="sym" viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="12"/><circle cx="32" cy="32" r="3"/></svg>
+        <h3>Organization Admins</h3>
+        <p>Manage team access, permissions and workspace settings.</p>
+        <ul class="mini-tog">
+          <li>Team access<i class="tg on"></i></li>
+          <li>Permissions<i class="tg on"></i></li>
+          <li>Workspace settings<i class="tg"></i></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 08 CONTROL -->
+<section class="control" id="control">
+  <div class="wrap ctl-grid">
+    <div class="ctl-copy">
+      <h2 class="h2">Built to keep growing teams <em>in control.</em></h2>
+      <p class="lede">Manage your hiring workspace with secure access, organized teams and clear permissions.</p>
+      <ul class="ctl-list">
+        <li>Multi-organization access</li>
+        <li>Organization switching</li>
+        <li>Role-based access control</li>
+        <li>Team management</li>
+        <li>Secure authentication</li>
+        <li>Session management</li>
+        <li>Audit logging</li>
+        <li>Organization-level data isolation</li>
+      </ul>
+    </div>
+    <div class="org" id="org">
+      <div class="org-top">
+        <button class="org-sel" id="orgSel" aria-haspopup="listbox" aria-expanded="false" aria-controls="orgList">
+          <span class="org-ico" id="orgIco">N</span><span><small>Organization</small><b id="orgName">Northwind Talent</b></span><svg class="ic"><use href="#chev"/></svg>
+        </button>
+        <ul class="org-list" id="orgList" role="listbox" aria-label="Switch organization" hidden></ul>
+        <span class="chip g">Admin</span>
+      </div>
+      <div class="org-sec">
+        <h4>Team members</h4>
+        <div class="members" id="members"></div>
+      </div>
+      <div class="org-sec">
+        <h4>Permissions</h4>
+        <div class="perm">
+          <div class="pr ph"><span></span><span>Recruiter</span><span>HR Manager</span><span>Hiring Mgr</span><span>Admin</span></div>
+          <div class="pr"><span>View candidates</span><i class="pd on"></i><i class="pd on"></i><i class="pd on"></i><i class="pd on"></i></div>
+          <div class="pr"><span>Edit jobs</span><i class="pd on"></i><i class="pd on"></i><i class="pd"></i><i class="pd on"></i></div>
+          <div class="pr"><span>Manage team</span><i class="pd"></i><i class="pd on"></i><i class="pd"></i><i class="pd on"></i></div>
+          <div class="pr"><span>View audit log</span><i class="pd"></i><i class="pd"></i><i class="pd"></i><i class="pd on"></i></div>
+        </div>
+      </div>
+      <p class="sample-note">Illustrative sample: organizations, people and permissions</p>
+    </div>
+  </div>
+</section>
+
+<!-- 09 BRAND MOMENT -->
+<section class="moment" id="moment">
+  <div class="wrap moment-grid">
+    <h2 class="moment-text" id="momentText">The future of hiring isn’t more complexity. It’s <em>better connections.</em></h2>
+    <div class="scene" id="scene" aria-hidden="true">
+      <div class="scene-tilt" id="sceneTilt">
+        <div class="plane">
+          <span class="disc"></span>
+          <div class="ring band" style="--d:470px;--t:90s"></div>
+          <div class="ring" style="--d:440px;--t:70s">
+            <div class="slot" style="--a:20deg"><i class="orb o-g" style="--s:34px;--t:70s;--a:20deg"></i></div>
+            <div class="slot" style="--a:200deg"><i class="orb o-d" style="--s:22px;--t:70s;--a:200deg"></i></div>
+          </div>
+          <div class="ring sun" style="--d:320px;--t:48s">
+            <div class="slot" style="--a:120deg"><i class="orb o-s" style="--s:30px;--t:48s;--a:120deg"></i></div>
+            <div class="slot" style="--a:300deg"><i class="orb o-g" style="--s:18px;--t:48s;--a:300deg"></i></div>
+          </div>
+          <div class="ring" style="--d:210px;--t:32s">
+            <div class="slot" style="--a:60deg"><i class="orb o-d" style="--s:26px;--t:32s;--a:60deg"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="scene-ui" id="sceneUi">
+        <svg class="sc-lines" id="scLines" fill="none"><path id="sc1"/><path id="sc2"/><path id="sc3"/><path id="sc4"/></svg>
+        <div class="sc-card sc-cand" id="scCand"><span class="cx-lab">Candidate</span><div class="cx-who"><span class="av a1">AO</span><div><b>Amara Okafor</b><span>Applied today</span></div></div></div>
+        <div class="sc-card sc-job" id="scJob"><span class="cx-lab">Opportunity</span><div class="cx-who"><span class="cx-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></svg></span><div><b>Product Designer</b><span>Remote · Open role</span></div></div></div>
+        <div class="sc-card sc-match" id="scMatch"><span class="cx-lab">Match</span><div class="sc-big">94%</div><i class="sc-bar"><u></u></i><span class="sc-note">Skills and experience</span></div>
+        <div class="sc-card sc-team" id="scTeam"><span class="cx-lab">Hiring team</span><div class="cx-who"><span class="sc-stack"><span class="av a2">DR</span><span class="av a3">LH</span><span class="av a4">MC</span></span><div><b>Reviewing</b><span>Interview stage</span></div></div></div>
+        <div class="core" id="scCore"><svg viewBox="0 0 30 30"><use href="#mark"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 CTA -->
+<section class="cta" id="cta">
+  <div class="wrap">
+    <div class="banner" id="banner">
+      <div class="banner-bg" aria-hidden="true">
+        <span class="dots"></span>
+        <svg viewBox="0 0 400 400"><circle cx="200" cy="200" r="198"/><circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="102"/></svg>
+        <span class="sundisc" id="sundisc"></span>
+      </div>
+      <div class="banner-copy">
+        <h2 class="cta-title">Find your next great hire with <em>TalentX.</em></h2>
+        <p class="lede">Bring clarity to your recruitment process and give your team a smarter way to hire.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#"><span>Get Started</span><svg class="ic"><use href="#arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#"><span>Talk to Our Team</span><svg class="ic"><use href="#arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="logo3d" id="logo3d" aria-hidden="true"><div class="l3-stage" id="l3"></div><div class="l3-shadow"></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 11 FOOTER -->
+<footer class="foot">
+  <span class="foot-sun" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="foot-top">
+      <h2 class="foot-claim">Smarter hiring starts with <em>better connections.</em></h2>
+      <a class="btn btn-light" href="#cta"><span>Get Started</span><svg class="ic"><use href="#arrow"/></svg></a>
+    </div>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo.svg" alt="TalentX" width="111" height="30">
+        <p>One platform for your entire hiring journey.</p>
+      </div>
+      <nav aria-label="Product"><h5>Product</h5><ul><li><a href="#process">AI Job Creation</a></li><li><a href="#ai">Candidate Screening</a></li><li><a href="#showcase">Candidate Management</a></li><li><a href="#showcase">Recruitment Pipeline</a></li></ul></nav>
+      <nav aria-label="Company"><h5>Company</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Contact</a></li><li><a href="#">Careers</a></li></ul></nav>
+      <nav aria-label="Resources"><h5>Resources</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Documentation</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul></nav>
+      <nav aria-label="Account"><h5>Account</h5><ul><li><a href="#">Log In</a></li><li><a href="#cta">Get Started</a></li></ul></nav>
+    </div>
+    <div class="foot-bottom"><span>© 2026 TalentX. All rights reserved.</span></div>
+  </div>
+  <div class="foot-word" aria-hidden="true">talentx</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
